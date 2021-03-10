@@ -7,7 +7,7 @@ let h4 = document.querySelector('h4');
 h4.innerHTML = `${weekDay[now.getDay()]}, ${hour}:${minutes}`;
 
 //CITY&SEARCHING
-let unit = document.querySelector('a');
+let unit = document.querySelector("#unitC");
 
 
 //this is to change and show the temperature and the name of the city

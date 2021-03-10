@@ -1,0 +1,91 @@
+body {
+  background-image: url('images/background0.png');
+  background-size: cover;
+}
+#searchEngine {
+  display: block;
+  align-items: center;
+  margin: 40px 0px 40px 0px;
+  position: static;
+  text-align: center;
+}
+input {
+  border: solid 2px rgb(207, 207, 207);
+  border-radius: 5px;
+}
+button {
+  display: inline;
+  background-color:#f6d9bc;
+  border: solid 2px #f6d9bc;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: all 270ms ease-in-out;
+}
+button:hover {
+  background-color: #f9f6f2;
+  border: solid 2px #f9f6f2;
+  border-radius: 5px;
+  color: #f7aa73;
+  font-weight: bold;
+}
+#current {
+  display: inline-block;
+  background-color:#BBCBB0;
+  border: solid 2px #BBCBB0;
+}
+#current:hover {
+  background-color: #f9f6f2;
+  border: solid 2px #f9f6f2;
+  border-radius: 5px;
+  color: #58735c;
+  font-weight: bold;
+}
+.data {
+  color: #58735c;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 72px;
+  color: #f7aa73;
+}
+.row {
+  text-align: center;
+  margin: 30px 120px 30px 120px;
+}
+.circle {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  background-color: #f9f6f2;
+  border: solid 4px #ecdfaf;
+  border-radius: 50%;
+  transition: all 270ms ease-in-out;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 28px;
+}
+.circle:hover {
+  border: solid 4px #BBCBB0;
+}
+i {
+  font-size: 30px;
+  color: #BBCBB0;
+}
+.day {
+  color: #58735c;
+}
+footer {
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 0 auto;
+}

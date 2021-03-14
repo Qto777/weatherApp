@@ -106,3 +106,7 @@ li {
   margin: 0 auto;
   padding: 0;
 }
+img {
+  width: 60px;
+  height: inherit;
+}

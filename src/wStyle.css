@@ -97,8 +97,12 @@ footer {
 }
 ul {
   display: inline;
+  margin: 0 auto;
+  padding: 0;
 }
 li {
   list-style: none;
   display: inline;
+  margin: 0 auto;
+  padding: 0;
 }

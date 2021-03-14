@@ -61,10 +61,10 @@ function changeToFahrenheit(event) {
 function changeToCelcius(event) {
     event.preventDefault();
     let tempElement = document.querySelector("#mainNumber");
-    let celsiusTemperature = null;
-    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+    tempElement.innerHTML = Math.round(celsiusTemperature);
   }
 
+  let celsiusTemperature = null;
 
   //this is to locate by geolocation
   function searchLocation(position) {

@@ -6,10 +6,6 @@ let weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 let h4 = document.querySelector('h4');
 h4.innerHTML = `${weekDay[now.getDay()]}, ${hour}:${minutes}`;
 
-//CITY&SEARCHING
-let unit = document.querySelector("#unitC");
-
-
 //this is to change and show the temperature and the name of the city
 function showTempAndName(response) {
     let tempDisplay = document.querySelector("#mainNumber");
@@ -50,8 +46,6 @@ function handleSubmit(event) {
 let form = document.querySelector("#searchEngine");
 form.addEventListener("submit", handleSubmit);
 
-
-
   //this is to change units from Celcius to Fahrenheit
   /*function changeToFahrenheit(event) {
     let tempC = document.querySelector("#mainNumber");
@@ -79,7 +73,7 @@ form.addEventListener("submit", handleSubmit);
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
   }
   
-  let celsiusTemperature = null;
+  let celsiusTemperature = 1;
   
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

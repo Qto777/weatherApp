@@ -49,7 +49,6 @@ form.addEventListener("submit", handleSubmit);
 let tempElement = document.querySelector("#mainNumber");
   //this is to change units from Celsius to Fahrenheit
 function changeToFahrenheit(event) {
-    event.preventDefault();
     let tempF = Math.round(tempC.textContent * (9 / 5) + 32);
     tempElement.innerHTML = tempF;
   }
@@ -58,7 +57,6 @@ function changeToFahrenheit(event) {
   letterF.addEventListener("click", changeToFahrenheit);
   
 function changeToCelsius(event) {
-    event.preventDefault();
     let tempC = Math.round((tempF.textContent - 32) * (5/9));
     tempElement.innerHTML = tempC;
   }

@@ -111,3 +111,11 @@ img {
   width: 120px;
   height: inherit;
 }
+#celcius-link {
+  text-decoration: none;
+  color: #F7AA73;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color: #F7AA73;
+}

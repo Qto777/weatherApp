@@ -47,13 +47,14 @@ let form = document.querySelector("#searchEngine");
 form.addEventListener("submit", handleSubmit);
 
   //this is to change units from Celcius to Fahrenheit
-  /*function changeToFahrenheit(event) {
+/*function changeToFahrenheit(event) {
     let tempC = document.querySelector("#mainNumber");
     let tempF = Math.round(tempC.textContent * (9 / 5) + 32);
-    unit.text = `${tempF} °F`;
+    tempC.text = `${tempF} °F`;
   }
 
-  unit.addEventListener("click", changeToFahrenheit);*/
+  let unitC = document.querySelector("#celcius-link")
+  unitC.addEventListener("click", changeToFahrenheit);*/
 
   function displayFahrenheitTemperature(event) {
     event.preventDefault();
@@ -73,7 +74,7 @@ form.addEventListener("submit", handleSubmit);
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
   }
   
-  let celsiusTemperature = 1;
+  let celsiusTemperature = null;
   
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

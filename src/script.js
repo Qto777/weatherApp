@@ -81,9 +81,6 @@ form.addEventListener("submit", handleSubmit);
   
   let celsiusTemperature = null;
   
-  let form = document.querySelector("#searchEngine");
-  form.addEventListener("submit", handleSubmit);
-  
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
   

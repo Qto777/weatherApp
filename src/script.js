@@ -74,7 +74,7 @@ form.addEventListener("submit", handleSubmit);
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
   }
   
-  let celsiusTemperature = null;
+  let celsiusTemperature = document.querySelector("#mainNumber");
   
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

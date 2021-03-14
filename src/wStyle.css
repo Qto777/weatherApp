@@ -1,5 +1,5 @@
 html {
-  background: url("src/images/background0.jpg") no-repeat center center fixed; 
+  background-image: url("src/images/background.jpg") no-repeat center center fixed; 
   background-size: cover;
 }
 #searchEngine {

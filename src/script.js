@@ -12,11 +12,20 @@ let unit = document.querySelector("#unitC");
 
 //this is to change and show the temperature and the name of the city
 function showTempAndName(response) {
-    let temperature = Math.round(response.data.main.temp);
     let tempDisplay = document.querySelector("#mainNumber");
-    tempDisplay.innerHTML = temperature;
     let cityName = document.querySelector(".city");
+    let descriptionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    let iconElement = document.querySelector("#icon");
+    tempDisplay.innerHTML = temperature;
     cityName.innerHTML = response.data.name;
+    
+    let temperature = Math.round(response.data.main.temp);
+    descriptionElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML = response.data.main.humidity;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function searchCity(city) {

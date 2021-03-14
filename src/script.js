@@ -50,7 +50,7 @@ form.addEventListener("submit", handleSubmit);
 function changeToFahrenheit(event) {
     let tempC = document.querySelector("#mainNumber");
     let tempF = Math.round(tempC.textContent * (9 / 5) + 32);
-    tempC.text = `${tempF} °F`;
+    tempC.innerHTML = tempF;
   }
 
   let letterF = document.querySelector("#fahrenheit-link")

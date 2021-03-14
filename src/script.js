@@ -46,10 +46,10 @@ function handleSubmit(event) {
 let form = document.querySelector("#searchEngine");
 form.addEventListener("submit", handleSubmit);
 
-
+ let tempElement = document.querySelector("#mainNumber");
   //this is to change units from Celsius to Fahrenheit
 function changeToFahrenheit(event) {
-    let tempElement = document.querySelector("#mainNumber");
+   
     let tempF = Math.round(tempElement.textContent * (9 / 5) + 32);
     tempElement.innerHTML = tempF;
   }
@@ -57,14 +57,14 @@ function changeToFahrenheit(event) {
   let letterF = document.querySelector("#fahrenheit-link")
   letterF.addEventListener("click", changeToFahrenheit);
   
-/*function changeToCelsius(event) {
-    let tempC = Math.round((tempF.textContent - 32) * (5/9));
+function changeToCelsius(event) {
+    let tempC = Math.round((tempElement.textContent - 32) * (5/9));
     tempElement.innerHTML = tempC;
   }
 
   let letterC = document.querySelector("#celcius-link");
   letterC.addEventListener("click", changeToCelsius);
-*/
+
 
   //this is to locate by geolocation
   function searchLocation(position) {

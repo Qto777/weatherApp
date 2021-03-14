@@ -53,13 +53,43 @@ form.addEventListener("submit", handleSubmit);
 
 
   //this is to change units from Celcius to Fahrenheit
-  function changeToFahrenheit(event) {
+  /*function changeToFahrenheit(event) {
     let tempC = document.querySelector("#mainNumber");
     let tempF = Math.round(tempC.textContent * (9 / 5) + 32);
     unit.text = `${tempF} °F`;
   }
 
-  unit.addEventListener("click", changeToFahrenheit);
+  unit.addEventListener("click", changeToFahrenheit);*/
+
+  function displayFahrenheitTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#mainNumber");
+  
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+    temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+  }
+  
+  function displayCelsiusTemperature(event) {
+    event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    let temperatureElement = document.querySelector("#mainNumber");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  }
+  
+  let celsiusTemperature = null;
+  
+  let form = document.querySelector("#searchEngine");
+  form.addEventListener("submit", handleSubmit);
+  
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+  
+  let celsiusLink = document.querySelector("#celsius-link");
+  celsiusLink.addEventListener("click", displayCelsiusTemperature);
+  
 
 
   //this is to locate by geolocation

@@ -61,10 +61,12 @@ function changeToFahrenheit(event) {
 function changeToCelcius(event) {
     event.preventDefault();
     let tempElement = document.querySelector("#mainNumber");
-    tempElement.innerHTML = Math.round(celsiusTemperature);
+    let tempC = Math.round((tempC * 9/5) + 32);
+    tempElement.innerHTML = tempC;
   }
 
-  let celsiusTemperature = null;
+  let letterC = document.querySelector("#celcius-link");
+  letterC.addEventListener("click", changeToCelcius);
 
   //this is to locate by geolocation
   function searchLocation(position) {

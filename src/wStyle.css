@@ -95,3 +95,9 @@ footer {
   font-weight: bold;
   font-style: italic;
 }
+ul {
+  display: inline;
+}
+li {
+  list-style: none;
+}
